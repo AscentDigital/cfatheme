@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=latin-ext');
+
+$rale: 'Raleway', sans-serif;
+$robo: 'Roboto', sans-serif;
+$min-ipad: 768px;
+$max-ipad: 1024px;
+@mixin ipad($orientation){
+	@if $orientation == auto{
+		@media screen and (min-device-width : $min-ipad)  and (max-device-width: $max-ipad) { @content; }
+	}
+	@else if $orientation == landscape {
+	    @media screen and (min-device-width : $min-ipad)  and (max-device-width: $max-ipad) and (orientation : landscape) { @content; }
+	}
+	@else if $orientation == portrait {
+	    @media screen and (min-device-width : $min-ipad)  and (max-device-width: $max-ipad) and (orientation : portrait) { @content; }
+	}
+
+}
+
+$min-iphone: 320px;
+$max-iphone: 568px;
+$max-iphone2: 720px;
+@mixin iphone($orientation){
+	@if $orientation == auto{ 
+		@media only screen 
+		  and (min-device-width: $min-iphone) 
+		  and (max-device-width: $max-iphone) 
+		  , (-webkit-min-device-pixel-ratio: 2){ 
+			@content;
+		}
+	}
+	@else if $orientation == landscape { 
+	    @media only screen 
+		  and (min-device-width: $min-iphone) 
+		  and (max-device-width: $max-iphone) 
+		  , (-webkit-min-device-pixel-ratio: 2),
+		   (orientation: landscape) { 
+			@content;
+		}
+	}
+	@else if $orientation == landscape2 { 
+	    @media only screen 
+		  and (max-device-width: $max-iphone2)  
+		  and (orientation: landscape) { 
+			@content;
+		}
+	}
+	@else if $orientation == portrait {
+	    @media only screen 
+		  and (min-device-width: $min-iphone) 
+		  and (max-device-width: $max-iphone) 
+		  , (-webkit-min-device-pixel-ratio: 2),
+		   (orientation: portrait) { 
+			@content;
+		}
+	}
+	@else if $orientation == portrait2 {
+	    @media only screen 
+		  and (max-device-width: $max-iphone2)  
+		  and (orientation: portrait) { 
+			@content;
+		}
+	}
+	
+
+}
+
+@mixin mobile(){
+	@media (max-width: 767px){
+		@content; 
+	}
+}
+
+
+// For bootstrap
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+ 
+@mixin for-xs-only(){
+	@media only screen and (max-width: $screen-xs-max) { @content; }
+}
+@mixin for-sm-under(){
+	@media only screen and (max-width: $screen-sm-max) { @content; }
+}
+@mixin for-sm-above(){
+	@media only screen and (min-width: $screen-sm-min) { @content; }
+}
+@mixin for-md-under(){
+	@media only screen and (max-width: $screen-md-max) { @content; }
+}
+@mixin for-md-above(){
+	@media only screen and (min-width: $screen-md-min) { @content; }
+} 
+@mixin for-lg-under(){
+	@media only screen and (min-width: $screen-lg-min) { @content; }
+} 
+@mixin for-lg-only(){
+	@media only screen and (max-width: $screen-lg-min) { @content; }
+}
+ 
+
+@mixin overflow(){
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@mixin clearbg(){
+	background: none; 
+}
