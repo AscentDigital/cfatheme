@@ -2,19 +2,19 @@
 <?php wp_footer(); ?>
 <footer class="section border-block __up">
   <div class="container">
-    <img src="./img/logotopbw.png" alt="" class="">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/logotopbw.png" alt="" class="">
 
-    <img src="./img/contacticons4-u3155.png" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/contacticons4-u3155.png" alt="">
     <a href="" class="contact">732.123.4567</a>
 
-    <img src="./img/contacticons3-u3153.png" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/contacticons3-u3153.png" alt="">
     <a href="" class="contact">info@constructionfa.com</a>
 
     <div class="social-contact">
-      <a href=""><img src="./img/social1-u4291.png" alt=""></a>
-      <a href=""><img src="./img/social2-u4293.png" alt=""></a>
-      <a href=""><img src="./img/social3-u4295.png" alt=""></a>
-      <a href=""><img src="./img/social4-u4297.png" alt=""></a>
+      <a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/social1-u4291.png" alt=""></a>
+      <a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/social2-u4293.png" alt=""></a>
+      <a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/social3-u4295.png" alt=""></a>
+      <a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/social4-u4297.png" alt=""></a>
     </div>
 
     <div class="footer-nav">
@@ -27,7 +27,7 @@
     </div>
   </div>
   <div class="copyright">
-    Copyright 2017 by Construction Funding Access, LLC
+    <?php echo _('Copyright 2017 by Construction Funding Access, LLC'); ?>
   </div>
 </footer>
 <!-- end footer -->

@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favico.png"> 
-  <title>Home : Construction Funding Access</title> 
+  <title><?php echo bloginfo('name'); ?></title> 
   <?php wp_head(); ?>
 </head> 
 <body>
