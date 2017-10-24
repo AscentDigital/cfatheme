@@ -61,21 +61,29 @@
               </div>
             </div>
           </div>
-          <!-- Nav-block -->
-          <nav class="nav-block hidden-xs">
-            <div><a href="index.html" class="active">home</a></div>
-            <div><a href="about.html">about</a></div>
-            <div><a href="loans.html">loans</a></div>
-            <div><a href="faq.html">FAQ's</a></div>
-            <div><a href="contact.html">contact</a></div>
-          </nav>
+            <?php  
+              wp_nav_menu(
+                array (
+                  'theme-location' => 'primary-menu',
+                  'container' => 'nav', // parent container 
+                  'container_class' => 'nav-block hidden-xs',
+                  'depth' => 1,
+                  'items_wrap' => '%3$s', // removes ul
+                  'walker' => new Description_Walker // custom walker to replace li with div
+                )
+              );
+            ?>
           <div class="styled-select blue visible-xs">
             <select onchange="location = this.value;">
-              <option value="index.html">Home</option> 
-              <option value="about.html">About</option> 
-              <option value="loans.html">Loans</option> 
-              <option value="faq.html">FAQ's</option> 
-              <option value="contact.html">Contact</option> 
+              <?php 
+              $items = wp_get_nav_menu_items('primary-menu');
+              foreach ($items as $item) {
+                $selected = '';
+                if(is_page() && get_the_ID() == $item->object_id){
+                  $selected = 'selected';
+                }
+                echo '<option value="'.$item->url.'" '.$selected.'>'.$item->title.'</option>';
+              } ?>
             </select>
           </div>
           <!--  -->

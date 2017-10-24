@@ -185,7 +185,7 @@ a:hover {
   line-height: 65px;
   text-transform: capitalize;
 }
-.main-banner nav.nav-block div a.active:after {
+.main-banner nav.nav-block div.active a:after {
   content: '';
   height: 7px;
   width: 100%;

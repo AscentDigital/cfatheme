@@ -1,0 +1,388 @@
+
+      .secondary-banner{
+        position: relative;
+        height: 259px;
+        background-size: cover;
+        background-position: center center;
+      }
+      .secondary-banner .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        height: 100%;
+      }
+      .secondary-banner h1 {
+        text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.65);
+        color: #FFFFFF;
+        font-size: 60px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 800;
+        margin-top:155px;
+      }
+      @media (max-width: 767px) {
+        .secondary-banner h1 {
+          font-size: 26px;
+        }
+      }
+      .secondary-banner:before, .secondary-banner:after {
+        z-index: 150;
+        background: rgba(0, 0, 0, 0.3);
+        content: '';
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 23px;
+      }
+      .secondary-banner:before {
+        top: 0px;
+      }
+      .secondary-banner:after {
+        bottom: 0px;
+      }
+      .about-title{
+        position: relative;
+      }
+      .about-title h1{
+          font-size: 36px;
+          line-height: 36px;
+          font-family: raleway, sans-serif;
+          font-weight: 800;
+          color:#013868;
+      }
+      .about-title h1:after {
+        background: #9B9999;
+        height: 2px;
+        width: 52%;
+        content: '';
+        position: absolute;
+        left: 0px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+      .g-title{
+        color: #03CD61;
+      }
+      .content-1{
+        margin-top: 50px;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 22px;
+        font-family: raleway, sans-serif;
+        font-weight: 500;
+      }
+      .content-2{
+        color: #0278DD;
+        font-size: 30px;
+        text-align: justify;
+        line-height: 33px;
+        font-family: raleway, sans-serif;
+        font-weight: 400;
+      }
+      .about-img{
+        margin-top:25px;
+      }
+      .about-icon{
+        margin-top:40px;
+      }
+      .content-3{
+        margin-top: 50px;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 22px;
+        font-family: raleway, sans-serif;
+        font-weight: 500;
+        margin-top:40px;
+      }
+      .content-4{
+        margin-top: 50px;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 22px;
+        font-family: raleway, sans-serif;
+        font-weight: 500;
+      }
+      .content-4 h1{
+        color: #014785;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: left;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+      }
+      /* End About */
+      .contact-list{
+        margin-top:80px;
+        position: relative;
+      }
+      .contact-title{
+        color: #0278DD;
+        font-size: 36px;
+        text-align: left;
+        line-height: 36px;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+        margin-top: 50px;
+      }
+      .contact-title:after {
+        background: #9B9999;
+        height: 2px;
+        width: 100%;
+        content: '';
+        position: absolute;
+        left: 0px;
+        margin-top: 70px;
+        margin-bottom: 100px;
+      }
+      .contact-box{
+        position: relative;
+      }
+      .contact-img{
+        margin-top:0px !important;
+      }
+      .contact-text{    
+        font-size: 24px;
+        text-align: left !important;
+        line-height: 31px;
+        font-family: roboto, sans-serif;
+        font-weight: 400;
+      }
+      @media (max-width: 767px) {
+        .contact-text {
+          font-size: 16px;
+          margin-left:10px;
+        }
+      }
+      .form-panel{
+        margin-top:80px;
+        margin-bottom: 80px;
+        position: relative;
+        background-color: #03CD61;
+        border-color: #03CD61;
+        border-radius: 0px;
+      }
+      .form-title{
+        color: #FFFFFF;
+        font-size: 36px;
+        line-height: 36px;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+      }
+      .request-form{
+        padding:0px 30px 0px 30px;
+      }
+      .request-form label{
+        color:#FFF;
+      }
+      .request-input{
+        height:60px;
+        padding-left: 20px;
+        font-size: 20px;
+        font-family: roboto, sans-serif;
+        font-weight: 700;
+        bottom:10px;
+        border-radius: 0px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 767px) {
+        .request-input {
+          font-size: 14px;
+        }
+      }
+      .bottom-message{
+        color: #666464 !important;
+        font-size: 36px !important;
+        text-align: center !important;;
+        line-height: 36px !important;
+        font-family: raleway, sans-serif !important;
+        font-weight: 400 !important;
+        text-transform: none !important;
+      }
+      @media (max-width: 767px) {
+        .bottom-message {
+          font-size: 23px !important;
+          padding: 35px 10px !important;    
+        }
+      }
+      /* End Contact */ 
+
+      .faq-area{
+        margin-top:80px;
+        position: relative;
+      }
+      .faq-area h1{
+        color: #0278DD;
+        font-size: 36px;
+        text-align: left;
+        line-height: 36px;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+      }
+      .faq-area h1:after {
+        background: #9B9999;
+        height: 2px;
+        width: 28%;
+        content: '';
+        position: absolute;
+        left: 0px;
+        margin-top: 70px;
+        margin-bottom: 100px;
+      }
+      .faq-list{
+        margin-top: 70px;
+        padding-bottom:70px;
+      }
+      .faq-number{
+        color: #D8D8D8;
+        font-size: 100px;
+        text-align: right;
+        line-height: 98px;
+        font-family: roboto, sans-serif;
+        font-weight: 900;
+      }
+      .faq-header{
+        color: #03CD62;
+        font-size: 26px;
+        line-height: 26px;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+      }
+      @media (max-width: 767px) {
+        .faq-header {
+          font-size: 16px;
+        }
+      }
+      .faq-content{
+        font-size: 17px;
+        text-align: justify;
+        line-height: 24px;
+        font-family: raleway, sans-serif;
+        font-weight: 500;
+      }
+      @media (max-width: 767px) {
+        .faq-content {
+          font-size: 14px;
+        }
+      }
+      .media{
+        margin-bottom:50px;
+      }
+      /* End FAQ*/
+      .need-list{
+        margin-top:80px;
+        position: relative;
+      }
+      .need-list h1{
+        color: #0278DD;
+        font-size: 36px;
+        text-align: left;
+        line-height: 36px;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+      }
+      .need-list ul{
+        text-align: left;
+        margin-top: 70px;
+      }
+      .need-list ul li{   
+        list-style-type: square; 
+        color: #03CD61;
+        font-size: 40px;
+        margin-left: 50px;
+      }
+      @media (max-width: 767px) {
+        .need-list ul li{
+          margin-left: 0px;
+        }
+      }
+      .text-list{
+        color: #999999;
+        font-size: 20px;
+        font-family: roboto, sans-serif;
+        font-weight: 700;
+        bottom:10px;
+      }
+      .need-list h1:after {
+        background: #9B9999;
+        height: 2px;
+        width: 82%;
+        content: '';
+        position: absolute;
+        left: 0px;
+        margin-top: 70px;
+        margin-bottom: 100px;
+      }
+      .form-panel{
+        margin-top:80px;
+        margin-bottom: 80px;
+        position: relative;
+        background-color: #03CD61;
+        border-color: #03CD61;
+        border-radius: 0px;
+      }
+      .request-form{
+        padding:30px;
+      }
+      .request-input{
+        height:60px;
+        padding-left: 20px;
+        font-size: 20px;
+        font-family: roboto, sans-serif;
+        font-weight: 700;
+        bottom:10px;
+        border-radius: 0px;
+        margin-bottom: 20px;
+      }
+      /* End Form */
+      .loan-title{
+        margin-top:80px;
+        position: relative;
+      }
+      .loan-content{
+        margin-top:60px;
+        position: relative;
+      }
+      .loan-content h2{    
+        color: #03CD62;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+      }
+      .loan-content p{
+        font-size: 16px !important;
+        text-align: justify !important;
+        line-height: 22px !important;
+        font-family: raleway, sans-serif !important;
+        font-weight: 500 !important;
+        padding:0 !important;
+
+      }
+      .side-text{    
+        color: #0078DD;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: roboto, sans-serif;
+        font-weight: 700;
+      }
+      .section-title{
+        color: #0278DD;
+        font-size: 36px;
+        text-align: left;
+        line-height: 36px;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+      }
+      .section-title:after {
+        background: #9B9999;
+        height: 2px;
+        width: 39%;
+        content: '';
+        position: absolute;
+        left: 0px;
+        margin-top: 70px;
+        margin-bottom: 100px;
+      }
+      /* End Loan*/
