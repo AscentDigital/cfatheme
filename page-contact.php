@@ -35,19 +35,28 @@
 			<div class="col-md-6">
 				<div class="panel panel-default form-panel">
 					<div class="panel-body">
-						<form class = "request-form" action="#" method = "">
+						<form class = "request-form" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+							<?php  
+								if(isset($_GET['sent']) && $_GET['sent'] == 'true'){
+									echo '<div class="alert alert-success">Your message has been successfully sent.</div>';
+								}else if(isset($_GET['sent']) && $_GET['sent'] == 'false'){
+									echo '<div class="alert alert-danger">Your message has not been successfully sent.</div>';
+								}
+							?>
+							<input type="hidden" name="action" value="cfatheme_contact_form">
+							<input type="hidden" name="pageid" value="<?php echo get_the_ID(); ?>">
 							<h1 class ="form-title">Quick Contact</h1>
 							<div class="form-group">
 								<label >Name</label>
-								<input type = "text" class = "form-control request-input" value ="" placeholder = "Full Name"/>
+								<input type = "text" class = "form-control request-input" value ="" placeholder = "Full Name" name="name"/>
 							</div>
 							<div class="form-group">
 								<label>Email address</label>
-								<input type = "email" class = "form-control request-input" value ="" placeholder = "Email"/>
+								<input type = "email" class = "form-control request-input" value ="" placeholder = "Email" name="email"/>
 							</div>  
 							<div class="form-group">
 								<label>Message</label>
-								<textarea class = "form-control request-input" value ="" rows="5" style="resize:none;" placeholder = "Enter your Message or Question"/></textarea>
+								<textarea class = "form-control request-input" value ="" rows="5" style="resize:none;" placeholder = "Enter your Message or Question"/ name="message"></textarea>
 							</div>  
 							<button type = "submit" class = "btn btn-primary btn-lg request-input">Submit</button>
 						</form>

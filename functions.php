@@ -60,4 +60,64 @@
 		$post = get_page_by_path($slug, OBJECT, $type);
 		return get_permalink($post->ID);
 	}
+
+	add_action('admin_menu', 'theme_contact_setup_menu');
+ 
+	function theme_contact_setup_menu(){
+	    add_menu_page( 'Theme Contact Page', 'Theme Options', 'manage_options', 'theme-option', 'init' );
+	}
+	 
+	function init(){
+		$success = '';
+		if(isset($_GET['success'])){
+			$success = ' <div id="message" class="updated notice notice-success is-dismissible"><p>Recipient updated.</p><button type="button" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></button></div>';
+		}
+	    echo '<div class="wrap">
+	    <h1>Edit Theme Options</h1><br>
+	   	'.$success.'
+	    <form action="'.esc_url( admin_url('admin-post.php') ).'" method="post">
+	    <input type="hidden" name="action" value="cfatheme_contact_form">
+	    <table class="form-table">
+	    	<tbody>
+	    		<tr class="form-field form-required">
+	    		<th scope="row"><label for="recipient-email">Recipient <span class="description">(required)</span></label></th>
+	    		<td><input name="recipient-email" type="text" id="recipient-email" value="'.get_option('cfatheme_recipient_email', '').'" aria-required="true" autocapitalize="none" autocorrect="off"></td>
+	    		</tr>
+	    	</toby>
+	    </table>
+	    <input type="submit" value="Update" name="submit" class="button button-primary">
+	    </div>';
+	}
+
+	function update_theme_options(){
+		$email = $_POST['recipient-email'];
+		update_option('cfatheme_recipient_email', $email);
+		wp_redirect(admin_url('admin.php?page=theme-option&success'));
+		exit;
+	}
+
+	add_action( 'admin_post_nopriv_cfatheme_update_theme_options', 'update_theme_options' );
+	add_action( 'admin_post_cfatheme_update_theme_options', 'update_theme_options' );
+
+	function send_contact_form(){
+		$pageid = $_POST['pageid'];
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+
+		$body = 'Full Name: ' . $name . "\r\n";
+		$body = 'Email Address: ' . $email . "\r\n";
+		$body = 'Message: ' . $message;
+
+		$success = 'false';
+		if(wp_mail(get_option('cfatheme_recipient_email', ''), 'Construction Funding Access Contact Form', $body)){
+			$success = 'true';
+		}
+
+		wp_redirect(get_the_permalink($pageid) . '?sent=' . $success);
+		exit;
+	}
+
+	add_action( 'admin_post_nopriv_cfatheme_contact_form', 'send_contact_form' );
+	add_action( 'admin_post_cfatheme_contact_form', 'send_contact_form' );
 ?>
