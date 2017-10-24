@@ -55,7 +55,7 @@
             <div class="submit_blk">
               <div class="submit-group">
                 <div><p>+</p></div>
-                <a href="form.html">
+                <a href="<?php echo get_link_by_slug('submit-a-request', 'page'); ?>">
                   <span>Submit a Request</span>
                 </a>
               </div>

@@ -55,4 +55,9 @@
 		add_theme_support('post-formats', array('aside', 'gallery', 'link'));
 	}
 	add_action('after_setup_theme', 'setup');
+
+	function get_link_by_slug($slug, $type = 'post'){
+		$post = get_page_by_path($slug, OBJECT, $type);
+		return get_permalink($post->ID);
+	}
 ?>
