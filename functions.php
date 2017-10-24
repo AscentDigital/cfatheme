@@ -76,7 +76,7 @@
 	    <h1>Edit Theme Options</h1><br>
 	   	'.$success.'
 	    <form action="'.esc_url( admin_url('admin-post.php') ).'" method="post">
-	    <input type="hidden" name="action" value="cfatheme_contact_form">
+	    <input type="hidden" name="action" value="cfatheme_update_theme_options">
 	    <table class="form-table">
 	    	<tbody>
 	    		<tr class="form-field form-required">
