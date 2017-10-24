@@ -106,8 +106,8 @@
 		$message = $_POST['message'];
 
 		$body = 'Full Name: ' . $name . "\r\n";
-		$body = 'Email Address: ' . $email . "\r\n";
-		$body = 'Message: ' . $message;
+		$body .= 'Email Address: ' . $email . "\r\n";
+		$body .= 'Message: ' . $message;
 
 		$success = 'false';
 		if(wp_mail(get_option('cfatheme_recipient_email', ''), 'Construction Funding Access Contact Form', $body)){
