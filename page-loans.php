@@ -17,6 +17,9 @@
           <h1 class ="section-title">Business Loans for construction companies and independent contractors</h1>
         </div>
       </div>
+      <div class="col-md-4">
+          <a href = "#" class = "btn btn-lg btn-primary btn-download"> Download Credit Application </a>
+      </div>  
       <div class="col-md-8">
         <div class="loan-content">
           <h2>Loan Description</h2>
@@ -51,7 +54,7 @@
       </div>
       <div class="col-md-4">
         <h2 class ="hidden-xs"><br><br></h2>
-        <span class = "side-text">
+        <span class = "side-text2">
           - Construction Companies<br>
           - Independent Contractors
         </span>
@@ -63,7 +66,7 @@
         <div class="loan-content">
           <h2>Loan Checklist</h2>
           <p>
-            • Completion of CFA application (see attached)<br>
+            • Completion of CFA application (<a href="#" class ="link">Click here to Download Application</a>)<br>
             • Copy of construction contract with either the prime or the public sector unit<br>
             • At least three years in business, listing approved and completed projects<br>
             • No history of bankruptcies in the last seven years<br>
@@ -72,10 +75,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <h2 class ="hidden-xs"><br><br></h2>
-        <span class = "side-text">
-          - Download Application Here
-        </span>
+          <a href = "#" class = "btn btn-lg btn-primary btn-download"> Download Credit Application </a>
       </div>
 
       <!-- -->

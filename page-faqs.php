@@ -68,7 +68,7 @@
 							</div>
 							<div class="media-body">
 								<h4 class="faq-header">
-									How much can I barrow?
+									How much can I borrow?
 								</h4>
 								<h4 class ="faq-content">
 								The line of credit is limited to a total of $500K subject to no more than four draws against the line of credit.</h4>

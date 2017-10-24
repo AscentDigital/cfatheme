@@ -18,8 +18,7 @@
     </div>
 
     <div class="footer-nav">
-      <a href="terms---conditions.html">Terms & conditions</a>
-      <a href="privacy-policy.html">privacy policy</a>
+      <a href="<?php echo get_link_by_slug('privacy-notice', 'page'); ?>">Privacy Notice</a>
       <a href="about.html">about</a> 
       <a href="loans.html">loans</a> 
       <a href="faq/html">FAQ's</a> 

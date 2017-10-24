@@ -51,7 +51,7 @@ get_header();
 
 <!-- #showcase -->
 <section id="showcase" class="section border-block __up __plus">
-	<div class="container">
+	<div class="container" style ="min-height:500px;">
 		<div class="row">
 			<div class="col-sm-4"> 
 				<div class="center-div">
@@ -60,7 +60,6 @@ get_header();
 					</div>
 				</div>
 				<h1>Fast and Easy</h1>
-				<p>Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam, sea vitae exerci adversarium an.</p> 
 			</div>
 			<div class="col-sm-4"> 
 				<div class="center-div">
@@ -69,7 +68,6 @@ get_header();
 					</div>
 				</div>
 				<h1>Fair Facility Fee</h1>
-				<p>Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam, sea vitae exerci adversarium an.</p> 
 			</div>
 			<div class="col-sm-4"> 
 				<div class="center-div">
@@ -78,7 +76,6 @@ get_header();
 					</div>
 				</div>
 				<h1>High Approval</h1>
-				<p>Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam, sea vitae exerci adversarium an.</p> 
 			</div>
 			<!--  -->
 		</div>
@@ -88,7 +85,7 @@ get_header();
 
 
 <!-- #testimonial -->
-<section id="testimonial" class="parallaxie border-block __up __plus" style='background: url("<?php echo get_template_directory_uri(); ?>/img/mainbanner2.jpg")' data-parallaxie='{"speed": -0.4"size": "auto"}'>
+<section id="testimonial" class="parallaxie border-block __up __plus" style='background: url("<?php echo get_template_directory_uri(); ?>/img/mainbanner2.jpg")'>
 	<div class="container text-center">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/comillas.png" alt="">
 		<p>
@@ -97,9 +94,9 @@ get_header();
 		<img src="<?php echo get_template_directory_uri(); ?>/img/comillas2.png" alt="">
 		<div class="author">
 			<p>
-				<span class="bk">[</span>
-				Larry Trevino, Partner
-				<span class="bk">]</span>
+				<span class="bk"></span>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/Larry.png" alt="" style = "height:50px;width:300px">
+				<span class="bk"></span>
 			</p>
 		</div>
 	</div>

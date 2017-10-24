@@ -19,7 +19,7 @@
 				<div class ="contact-list">
 					<div class="row">
 						<div class="col-xs-2"><img class ="contact-img" src ="<?php echo get_template_directory_uri(); ?>/img/iconscontact1-u3657.png"></div>
-						<div class="col-xs-6"><div class ="contact-text">1234 Street Name Suite 789 Houston, TX 77043</div></div>
+						<div class="col-xs-6"><div class ="contact-text">8588 Katy Fwy., Ste. 445 Houston, TX 77024</div></div>
 					</div><br><br>
 					<div class="row">
 						<div class="col-xs-2"><img class ="contact-img" src ="<?php echo get_template_directory_uri(); ?>/img/iconscontact2-u3659.png"></div>
