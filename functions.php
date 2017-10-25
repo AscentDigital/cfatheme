@@ -167,6 +167,16 @@
 			$success = 'true';
 		}
 
+		$body = 'Product Type: ' . $product_type . "\r\n";
+		$body .= 'Desired Loan Range: ' . $loan_range . "\r\n";
+		$body .= 'How fast do you need the loan: ' . $fast . "\r\n";
+		$body .= 'Full Name: ' . $name . "\r\n";
+		$body .= 'Phone Number: ' . $number . "\r\n";
+		$body .= 'City: ' . $city . "\r\n";
+		$body .= 'Email: ' . $email . "\r\n";
+
+		wp_mail(get_option('cfatheme_recipient_email', ''), 'CFA Request Form', $body)
+
 		wp_redirect(get_the_permalink($pageid) . '?success=' . $success);
 		exit;
 	}
