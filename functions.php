@@ -64,7 +64,7 @@
 	add_action('admin_menu', 'theme_contact_setup_menu');
  
 	function theme_contact_setup_menu(){
-	    add_menu_page( 'Theme Contact Page', 'Theme Options', 'manage_options', 'theme-option', 'init' );
+	    add_menu_page( 'Theme Options', 'Theme Options', 'manage_options', 'theme-option', 'init' );
 	}
 	 
 	function init(){
@@ -164,7 +164,7 @@
 
 		$success = 'false';
 		if($result){
-			$success = true;
+			$success = 'true';
 		}
 
 		wp_redirect(get_the_permalink($pageid) . '?success=' . $success);
@@ -173,4 +173,38 @@
 
 	add_action( 'admin_post_nopriv_cfatheme_request_form', 'request_form' );
 	add_action( 'admin_post_cfatheme_request_form', 'request_form' );
+
+	add_action('admin_menu', 'theme_request_setup_menu');
+
+	function theme_request_setup_menu(){
+	    add_menu_page( 'Construction Funding Access Requests', 'CFA Requests', 'manage_options', 'cfa-requests', 'init_requests' );
+	}
+
+	function init_requests(){
+		 echo '<div class="wrap">
+	    <h1>Construction Funding Access Requests</h1><br>
+	    <table class="widefat">
+			<thead>
+			    <tr>
+			        <th>RegId</th>
+			        <th>Name</th>       
+			        <th>Email</th>
+			    </tr>
+			</thead>
+			<tfoot>
+			    <tr>
+			    <th>RegId</th>
+			    <th>Name</th>
+			    <th>Email</th>
+			    </tr>
+			</tfoot>
+			<tbody>
+			   <tr>
+			     <td>Test</td>
+			     <td>Test</td>
+			     <td>Test</td>
+			   </tr>
+			</tbody>
+		</table>';
+	}
 ?>
