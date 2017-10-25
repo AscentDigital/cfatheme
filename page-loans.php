@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="col-md-4">
-          <a href = "<?php echo get_field('file')['url']; ?>" target="_blank" target="_blank" class = "btn btn-lg btn-primary btn-download"> Download Credit Application </a>
+          <a href = "<?php echo get_field('file')['url']; ?>" target="_blank" download class = "btn btn-lg btn-primary btn-download"> Download Credit Application </a>
       </div>  
       <div class="col-md-8">
         <div class="loan-content">
@@ -66,7 +66,7 @@
         <div class="loan-content">
           <h2>Loan Checklist</h2>
           <p>
-            • Completion of CFA application (<a href="<?php echo get_field('file')['url']; ?>" target="_blank" target="_blank" class ="link">Click here to Download Application</a>)<br>
+            • Completion of CFA application (<a href="<?php echo get_field('file')['url']; ?>" target="_blank" download class ="link">Click here to Download Application</a>)<br>
             • Copy of construction contract with either the prime or the public sector unit<br>
             • At least three years in business, listing approved and completed projects<br>
             • No history of bankruptcies in the last seven years<br>
@@ -75,7 +75,7 @@
         </div>
       </div>
       <div class="col-md-4">
-          <a href = "<?php echo get_field('file')['url']; ?>" target="_blank" target="_blank" class = "btn btn-lg btn-primary btn-download"> Download Credit Application </a>
+          <a href = "<?php echo get_field('file')['url']; ?>" target="_blank" download class = "btn btn-lg btn-primary btn-download"> Download Credit Application </a>
       </div>
 
       <!-- -->
