@@ -181,30 +181,32 @@
 	}
 
 	function init_requests(){
-		 echo '<div class="wrap">
-	    <h1>Construction Funding Access Requests</h1><br>
-	    <table class="widefat">
-			<thead>
-			    <tr>
-			        <th>RegId</th>
-			        <th>Name</th>       
-			        <th>Email</th>
-			    </tr>
-			</thead>
-			<tfoot>
-			    <tr>
-			    <th>RegId</th>
-			    <th>Name</th>
-			    <th>Email</th>
-			    </tr>
-			</tfoot>
-			<tbody>
-			   <tr>
-			     <td>Test</td>
-			     <td>Test</td>
-			     <td>Test</td>
-			   </tr>
-			</tbody>
-		</table>';
+		require('pagination.class.php');
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'cfatheme_requests';
+
+		$page_num = isset( $_GET['paged'] ) ? absint( $_GET['paged'] ) : 1;
+		$limit = 10; // Number of rows in page
+		$offset = ( $page_num - 1 ) * $limit;
+		$total = $wpdb->get_var( "SELECT COUNT(`id`) FROM $table_name" );
+		$num_of_pages = ceil( $total / $limit );
+		$lists = $wpdb->get_results("SELECT * FROM $table_name ORDER BY id ASC LIMIT $offset,$limit" );
+
+		$p = new pagination;
+        $p->items($total);
+        $p->limit($limit); // Limit entries per page
+        $p->target("admin.php?page=cfa-requests"); 
+        $p->currentPage($_GET[$p->paging]); // Gets and validates the current page
+        $p->calculate(); // Calculates what to show
+        $p->parameterName('paged');
+        $p->adjacents(1); //No. of page away from the current page
+                 
+        if(!isset($_GET['paged'])) {
+            $p->page = 1;
+        } else {
+            $p->page = $_GET['paged'];
+        }
+
+        include '/includes/requests-table.php';
 	}
 ?>
