@@ -175,7 +175,7 @@
 		$body .= 'City: ' . $city . "\r\n";
 		$body .= 'Email: ' . $email . "\r\n";
 
-		wp_mail(get_option('cfatheme_recipient_email', ''), 'CFA Request Form', $body)
+		wp_mail(get_option('cfatheme_recipient_email', ''), 'CFA Request Form', $body);
 
 		wp_redirect(get_the_permalink($pageid) . '?success=' . $success);
 		exit;
