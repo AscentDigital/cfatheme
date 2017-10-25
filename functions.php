@@ -171,7 +171,7 @@
 		$body .= 'Desired Loan Range: ' . $loan_range . "\r\n";
 		$body .= 'How fast do you need the loan: ' . $fast . "\r\n";
 		$body .= 'Full Name: ' . $name . "\r\n";
-		$body .= 'Phone Number: ' . $number . "\r\n";
+		$body .= 'Phone Number: ' . $phone . "\r\n";
 		$body .= 'City: ' . $city . "\r\n";
 		$body .= 'Email: ' . $email . "\r\n";
 
