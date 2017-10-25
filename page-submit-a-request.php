@@ -58,8 +58,26 @@
 							<input type = "text" class = "form-control request-input" value ="" placeholder = "Phone Number"/>
 							<input type = "text" class = "form-control request-input" value ="" placeholder = "City"/>
 							<input type = "text" class = "form-control request-input" value ="" placeholder = "Email"/>
-							<button type = "submit" class = "btn btn-primary btn-block btn-lg request-input">Submit</button>
-						</form>
+		                    <button type = "button" class = "btn btn-primary btn-block btn-lg request-input">Submit</button>
+		                  </form>
+		                    <button type = "button" class = "btn btn-primary btn-block btn-lg request-input hidden" data-toggle="modal" data-target="#SuccessWindow">Hidden</button>
+		                    <!-- Success Window -->
+		                    <div class="modal fade success-modal" id="SuccessWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		                      <div class="modal-dialog" role="document">
+		                        <div class="modal-content">
+		                          <div class="modal-header">
+		                          <div class="modal-body">
+		                          	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		                            <div class="success-content text-center">
+		                            	<h1>Your Request has been Submitted</h1>
+		                            	<p>One of our staff members will be<br>contacting you soon.</p>
+		                            	<br>
+		                            	<a href ="#" data-dismiss="modal" aria-label="Close"> Close Window</a>
+		                            </div>
+		                          </div>
+		                        </div>
+		                      </div>
+		                    </div>
 					</div>
 				</div>
 			</div>

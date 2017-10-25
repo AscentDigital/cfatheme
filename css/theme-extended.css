@@ -485,3 +485,45 @@
         font-family: raleway, sans-serif;
         font-weight: 500;
       }
+      .testimonial-background{
+        position: relative;
+        min-height: 512px;
+        background-size: cover !important;
+        background-position: center center !important;
+      }
+      .success-modal{
+        margin-top:140px;
+      }
+      .success-modal .modal-content{
+        border-radius: 0px;
+      }
+      .success-content h1{
+        color: #0278DD;
+        font-size: 28px;
+        line-height: 36px;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+      }
+      .success-content p{
+        font-size: 21px;
+        line-height: 22px;
+        font-family: raleway, sans-serif;
+        font-weight: 500;
+        margin-top: 20px;
+      }
+      .success-content a{
+        color:#03CD61;
+        font-size: 21px;
+        line-height: 22px;
+        font-family: raleway, sans-serif;
+        font-weight: 500;
+      }
+      .success-content a:hover{
+        color:#01A049;
+        text-decoration: underline;
+      }
+      @media (max-width: 767px) {
+        .success-modal{
+          margin-top:70px;
+        }
+      }

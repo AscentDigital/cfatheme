@@ -41,7 +41,7 @@
 					<b>3.</b> Significantly reducing the probability of inquiries or complaints from sub- contractors awaiting payment.<br>
 				</div> 
 				<div class="content-4">
-					<h1>Why Construction Funding Access?</h1>
+					<h1>Why CFA?</h1>
 					<img src ="<?php echo get_template_directory_uri(); ?>/img/chart.jpg" class ="img-responsive "><br><br><br><br>
 					This is accomplished by providing small primes and sub-contractors with easily accessible capital with favorable pricing without regard to their credit, tenure in business or underlying assets. Different than a factoring company, CFA takes into consideration the financial strength of the contracting entity and passes savings through to its small business clients.
 				</div>   

@@ -50,7 +50,7 @@
           <!-- Pre-block -->
           <div class="pre-block">
             <div class="logo_blk">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logotop.png" alt="" class="img-responsive">
+              <a href="<?php echo get_link_by_slug('home', 'page'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logotop.png" alt="" class="img-responsive"></a>
             </div>
             <div class="submit_blk">
               <div class="submit-group">

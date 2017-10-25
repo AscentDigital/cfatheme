@@ -51,7 +51,7 @@ get_header();
 
 <!-- #showcase -->
 <section id="showcase" class="section border-block __up __plus">
-	<div class="container" style ="min-height:500px;">
+	<div class="container" style ="min-height:470px;">
 		<div class="row">
 			<div class="col-sm-4"> 
 				<div class="center-div">
@@ -85,7 +85,7 @@ get_header();
 
 
 <!-- #testimonial -->
-<section id="testimonial" class="parallaxie border-block __up __plus" style='background: url("<?php echo get_template_directory_uri(); ?>/img/mainbanner2.jpg")'>
+<section id="testimonial" class="border-block __up __plus testimonial-background" style='background: url("<?php echo get_template_directory_uri(); ?>/img/mainbanner2.jpg")'>
 	<div class="container text-center">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/comillas.png" alt="">
 		<p>
@@ -95,7 +95,7 @@ get_header();
 		<div class="author">
 			<p>
 				<span class="bk"></span>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/Larry.png" alt="" style = "height:50px;width:300px">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/Larry.png" alt="" style = "height:62px;width:406px;margin-bottom:30px;">
 				<span class="bk"></span>
 			</p>
 		</div>

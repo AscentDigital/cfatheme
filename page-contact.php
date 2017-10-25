@@ -9,7 +9,7 @@
 
 
 <!-- #form -->
-<section id="about" class="section border-block __up">
+<section class="section border-block __up">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -60,6 +60,24 @@
 							</div>  
 							<button type = "submit" class = "btn btn-primary btn-lg request-input">Submit</button>
 						</form>
+		                    <button type = "button" class = "btn btn-primary btn-block btn-lg request-input hidden" data-toggle="modal" data-target="#SuccessWindow">Hidden</button>
+		                    <!-- Success Window -->
+		                    <div class="modal fade success-modal" id="SuccessWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		                      <div class="modal-dialog" role="document">
+		                        <div class="modal-content">
+		                          <div class="modal-header">
+		                          <div class="modal-body">
+		                          	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		                            <div class="success-content text-center">
+		                            	<h1>Your message has been sent</h1>
+		                            	<p>Thank you for contacting us</p>
+		                            	<br>
+		                            	<a href ="#" data-dismiss="modal" aria-label="Close"> Close Window</a>
+		                            </div>
+		                          </div>
+		                        </div>
+		                      </div>
+		                    </div>
 					</div>
 				</div>
 			</div>

@@ -9,7 +9,7 @@
 
 
 <!-- #form -->
-<section id="about" class="section border-block __up">
+<section class="section border-block __up">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-11">
