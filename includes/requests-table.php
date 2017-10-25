@@ -1,6 +1,12 @@
 <div class="wrap">
 	<h1>Construction Funding Access Requests</h1><br>
+	<ul class="subsubsub">
+		<li class="all">Total <span class="count">(<?php echo $total; ?>)</span></li>
+	</ul>
 	<div class="tablenav top">
+		<div class="alignleft actions bulkactions">
+			<a class="button button-primary" role="button" href="<?php echo esc_url( admin_url('admin-post.php') ); ?>?page=cfa-requests&export">Export</a>
+		</div>
 		<div class="tablenav-pages">
 			<?php echo $p->show(); ?>
 		</div>

@@ -206,7 +206,62 @@
         } else {
             $p->page = $_GET['paged'];
         }
-
         include get_template_directory() . '/includes/requests-table.php';
 	}
+
+	function export(){
+		if ( ! is_super_admin() ) {
+			return;
+		}
+		if (!isset($_GET['export']) || (!isset($_GET['page']) && $_GET['page'] != 'cfa-requests')) {
+			return;
+		}
+
+		$filename = 'cfa-requests-' . time() . '.csv';
+
+		$header_row = array(
+			0 => 'Product Type',
+			1 => 'Desired Loan Range',
+			2 => 'How Fast Do You Need The Loan',
+			3 => 'Full Name',
+			4 => 'Phone Number',
+			5 => 'City',
+			6 => 'Email',
+			7 => 'Date Requested',
+		);
+
+		$data_rows = array();
+		global $wpdb, $bp;
+		$table_name = $wpdb->prefix . 'cfatheme_requests';
+		$lists = $wpdb->get_results("SELECT * FROM $table_name ORDER BY id ASC" );
+		foreach ( $lists as $list ) {
+			$row = array();
+			$row[0] = $list->product_type;
+			$row[1] = $list->loan_range;
+			$row[2] = $list->fast;
+			$row[3] = $list->name;
+			$row[4] = $list->phone;
+			$row[5] = $list->city;
+			$row[6] = $list->email;
+			$row[7] = date('g:i a F j, Y', strtotime($list->date));
+			$data_rows[] = $row;
+		}
+
+		$fh = @fopen( 'php://output', 'w' );
+		fprintf( $fh, chr(0xEF) . chr(0xBB) . chr(0xBF) );
+		header( 'Cache-Control: must-revalidate, post-check=0, pre-check=0' );
+		header( 'Content-Description: File Transfer' );
+		header( 'Content-type: text/csv' );
+		header( "Content-Disposition: attachment; filename={$filename}" );
+		header( 'Expires: 0' );
+		header( 'Pragma: public' );
+		fputcsv( $fh, $header_row );
+		foreach ( $data_rows as $data_row ) {
+			fputcsv( $fh, $data_row );
+		}
+		fclose( $fh );
+		die();
+	}
+
+	add_action( 'admin_init', 'export' );
 ?>
