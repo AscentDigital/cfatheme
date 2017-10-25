@@ -1,6 +1,6 @@
 <div class="wrap">
 	<h1>Construction Funding Access Requests</h1><br>
-	<div class="tablenav">
+	<div class="tablenav top">
 		<div class="tablenav-pages">
 			<?php echo $p->show(); ?>
 		</div>

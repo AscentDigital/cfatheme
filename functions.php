@@ -207,6 +207,6 @@
             $p->page = $_GET['paged'];
         }
 
-        include '/includes/requests-table.php';
+        include get_template_directory() . '/includes/requests-table.php';
 	}
 ?>
