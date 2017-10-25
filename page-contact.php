@@ -36,13 +36,6 @@
 				<div class="panel panel-default form-panel">
 					<div class="panel-body">
 						<form class = "request-form" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
-							<?php  
-								if(isset($_GET['sent']) && $_GET['sent'] == 'true'){
-									echo '<div class="alert alert-success">Your message has been successfully sent.</div>';
-								}else if(isset($_GET['sent']) && $_GET['sent'] == 'false'){
-									echo '<div class="alert alert-danger">Your message has not been successfully sent.</div>';
-								}
-							?>
 							<input type="hidden" name="action" value="cfatheme_contact_form">
 							<input type="hidden" name="pageid" value="<?php echo get_the_ID(); ?>">
 							<h1 class ="form-title">Quick Contact</h1>
@@ -60,7 +53,7 @@
 							</div>  
 							<button type = "submit" class = "btn btn-primary btn-lg request-input">Submit</button>
 						</form>
-		                    <button type = "button" class = "btn btn-primary btn-block btn-lg request-input hidden" data-toggle="modal" data-target="#SuccessWindow">Hidden</button>
+		                    <button type = "button" id="modal-open" class = "btn btn-primary btn-block btn-lg request-input hidden" data-toggle="modal" data-target="#SuccessWindow">Hidden</button>
 		                    <!-- Success Window -->
 		                    <div class="modal fade success-modal" id="SuccessWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		                      <div class="modal-dialog" role="document">

@@ -28,16 +28,18 @@
 			<div class="col-md-6">
 				<div class="panel panel-default form-panel">
 					<div class="panel-body">
-						<form class = "request-form" action="#" method = "">
+						<form class = "request-form" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+							<input type="hidden" name="action" value="cfatheme_request_form">
+							<input type="hidden" name="pageid" value="<?php echo get_the_ID(); ?>">
 							<div class="select-div">
-							<select class ="form-control request-input">
+							<select class ="form-control request-input" name="product_type">
 								<option value="" disabled selected>Product Type</option>
 								<option value = "Loan">Loan</option>
 								<option value = "Line of Credit">Line of Credit</option>
 							</select>
 							</div>
 							<div class="select-div">
-							<select class ="form-control request-input">
+							<select class ="form-control request-input" name="loan_range">
 								<option value="" disabled selected>Desired Loan Range</option>
 								<option value = "$30,000-$50,000">$30,000-$50,000</option>
 								<option value = "$50,000-$100,000">$50,000-$100,000</option>
@@ -47,18 +49,18 @@
 							</select>
 							</div>
 							<div class="select-div">
-							<select class ="form-control request-input">
+							<select class ="form-control request-input" name="fast">
 								<option value="" disabled selected>How Fast you need the loan?</option>
 								<option value = "Within 1 Week">Within 1 Week</option>
 								<option value = "Within 1 Month">Within 1 Month</option>
 								<option value = "More than a month away">More than a month away</option>
 							</select>
 							</div>
-							<input type = "text" class = "form-control request-input" value ="" placeholder = "Full Name"/>
-							<input type = "text" class = "form-control request-input" value ="" placeholder = "Phone Number"/>
-							<input type = "text" class = "form-control request-input" value ="" placeholder = "City"/>
-							<input type = "text" class = "form-control request-input" value ="" placeholder = "Email"/>
-		                    <button type = "button" class = "btn btn-primary btn-block btn-lg request-input">Submit</button>
+							<input type = "text" class = "form-control request-input" value ="" placeholder = "Full Name" name="name">
+							<input type = "text" class = "form-control request-input" value ="" placeholder = "Phone Number" name="phone">
+							<input type = "text" class = "form-control request-input" value ="" placeholder = "City" name="city">
+							<input type = "email" class = "form-control request-input" value ="" placeholder = "Email" name="email">
+		                    <button type = "submit" class = "btn btn-primary btn-block btn-lg request-input">Submit</button>
 		                  </form>
 		                    <button type = "button" class = "btn btn-primary btn-block btn-lg request-input hidden" data-toggle="modal" data-target="#SuccessWindow">Hidden</button>
 		                    <!-- Success Window -->

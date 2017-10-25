@@ -34,6 +34,18 @@
   jQuery(function( $ ){
     $('.parallaxie').parallaxie();
   });
+
+  <?php if(isset($_GET['sent']) && $_GET['sent'] == 'true'){ ?>
+    jQuery(function( $ ){
+      $('#SuccessWindow').modal('show');
+    });
+  <?php } ?>
+
+  <?php if(isset($_GET['success']) && $_GET['success'] == 'true'){ ?>
+    jQuery(function( $ ){
+      $('#SuccessWindow').modal('show');
+    });
+  <?php } ?>
 </script>
 </body>
 </html>

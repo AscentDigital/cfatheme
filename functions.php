@@ -120,4 +120,57 @@
 
 	add_action( 'admin_post_nopriv_cfatheme_contact_form', 'send_contact_form' );
 	add_action( 'admin_post_cfatheme_contact_form', 'send_contact_form' );
+
+	function create_requests_table(){
+		global $wpdb;
+
+		$charset_collate = $wpdb->get_charset_collate();
+		$table_name = $table_name = $wpdb->prefix . "cfatheme_requests"; 
+		$sql = "CREATE TABLE $table_name ( `id` INT(11) NOT NULL AUTO_INCREMENT , `product_type` VARCHAR(45) NOT NULL , `loan_range` VARCHAR(45) NOT NULL , `fast` VARCHAR(45) NOT NULL , `name` VARCHAR(200) NOT NULL , `phone` VARCHAR(45) NOT NULL , `city` VARCHAR(200) NOT NULL , `email` VARCHAR(200) NOT NULL , `date` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB $charset_collate;";
+
+		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+		dbDelta( $sql );
+	}
+
+	add_action("after_switch_theme", "create_requests_table");
+
+	function request_form(){
+		global $wpdb;
+
+		$pageid = $_POST['pageid'];
+		$product_type = $_POST['product_type'];
+		$loan_range = $_POST['loan_range'];
+		$fast = $_POST['fast'];
+		$name = $_POST['name'];
+		$phone = $_POST['phone'];
+		$city = $_POST['city'];
+		$email = $_POST['email'];
+
+		$table_name = $wpdb->prefix . 'cfatheme_requests';
+
+		$result = $wpdb->insert( 
+			$table_name, 
+			array( 
+				'product_type' => $product_type,
+				'loan_range' => $loan_range,
+				'fast' => $fast,
+				'name' => $name, 
+				'phone' => $phone, 
+				'city' => $city,
+				'email' => $email,
+				'date' => current_time( 'mysql' )
+			) 
+		);
+
+		$success = 'false';
+		if($result){
+			$success = true;
+		}
+
+		wp_redirect(get_the_permalink($pageid) . '?success=' . $success);
+		exit;
+	}
+
+	add_action( 'admin_post_nopriv_cfatheme_request_form', 'request_form' );
+	add_action( 'admin_post_cfatheme_request_form', 'request_form' );
 ?>
