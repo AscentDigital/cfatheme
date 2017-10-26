@@ -15,25 +15,30 @@
 			<div class="col-md-12">
 				<h1 class = "contact-title">Get in touch with us</h1>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-6">
 				<div class ="contact-list">
 					<div class="row">
 						<div class="col-xs-2"><img class ="contact-img" src ="<?php echo get_template_directory_uri(); ?>/img/iconscontact1-u3657.png"></div>
-						<div class="col-xs-6"><div class ="contact-text">8588 Katy Fwy., Ste. 445 Houston, TX 77024</div></div>
-					</div><br><br>
-					<div class="row">
-						<div class="col-xs-2"><img class ="contact-img" src ="<?php echo get_template_directory_uri(); ?>/img/iconscontact2-u3659.png"></div>
-						<div class="col-xs-6"><div class ="contact-text">832.1234.5678<br>832.1234.5689</div></div>
+						<div class="col-xs-6">
+						<div class ="contact-text">
+						8588 Katy Freeway<br>
+						Suite 445<br>
+						Houston, TX 77024<br>
+						</div></div>
 					</div><br><br>
 					<div class="row">
 						<div class="col-xs-2"><img class ="contact-img" src ="<?php echo get_template_directory_uri(); ?>/img/iconscontact3-u3661.png"></div>
+						<div class="col-xs-6"><div class ="contact-text">713.722.0162</div></div>
+					</div><br><br>
+					<div class="row">
+						<div class="col-xs-2"><img class ="contact-img" src ="<?php echo get_template_directory_uri(); ?>/img/iconscontact2-u3659.png"></div>
 						<div class="col-xs-6"><div class ="contact-text">info@constructionfa.com</div></div>
 					</div>
 
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="panel panel-default form-panel">
+				<div class="panel panel-default form-panel2">
 					<div class="panel-body">
 						<form class = "request-form" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
 							<input type="hidden" name="action" value="cfatheme_contact_form">
@@ -49,7 +54,7 @@
 							</div>  
 							<div class="form-group">
 								<label>Message</label>
-								<textarea class = "form-control request-input" value ="" rows="5" style="resize:none;" placeholder = "Enter your Message or Question"/ name="message"></textarea>
+								<textarea class = "form-control request-input" value ="" rows="5" style="resize:vertical;padding-top:15px;" placeholder = "Enter your Message or Question"/ name="message"></textarea>
 							</div>  
 							<button type = "submit" class = "btn btn-primary btn-lg request-input">Submit</button>
 						</form>

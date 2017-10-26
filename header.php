@@ -17,7 +17,7 @@
     <div class="container">
       <div class="nav-content">
         <a href="">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/iconscontact2.png" alt="call us"> <span>732.123.4567</span></a>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/iconscontact2.png" alt="call us"> <span>713.722.0162</span></a>
         </div>
         <div class="nav-content">
           <a href="">

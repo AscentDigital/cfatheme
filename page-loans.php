@@ -9,7 +9,7 @@
 
 
 <!-- #form -->
-<section id="about" class="section border-block __up">
+<section class="section border-block __up">
   <div class="container">
     <div class="row" style ="margin-bottom:125px;">
       <div class="col-md-8">
@@ -21,7 +21,7 @@
           <a href = "<?php echo get_field('file')['url']; ?>" target="_blank" download class = "btn btn-lg btn-primary btn-download"> Download Credit Application </a>
       </div>  
       <div class="col-md-8">
-        <div class="loan-content">
+        <div class="loan-content sec-1">
           <h2>Loan Description</h2>
           <p>
             The loan is based on a line of credit of no more than $500,000 and is project specific.  Advances under the line of credit are discounted whereby the subcontractor or small prime will receive 95% of the requested advance amount.  CFA will directly be repaid 100% of the requested advance either from the public sector unit or the contractor once funds are disbursed by the public sector unit.<br><br>
@@ -34,11 +34,10 @@
         </div>
       </div>
       <div class="col-md-4">
-        <h2 class ="hidden-xs"><br><br></h2>
-        <span class = "side-text">
+        <div class = "side-text">
           - Funding lines up to $500,000<br>
           - Line of credit is for 60 Days
-        </span>
+        </div>
       </div>
       <!-- -->
 
@@ -53,11 +52,10 @@
         </div>
       </div>
       <div class="col-md-4">
-        <h2 class ="hidden-xs"><br><br></h2>
-        <span class = "side-text2">
+        <div class = "side-text2">
           - Construction Companies<br>
           - Independent Contractors
-        </span>
+        </div>
       </div>
 
       <!-- -->
@@ -65,7 +63,7 @@
       <div class="col-md-8">
         <div class="loan-content">
           <h2>Loan Checklist</h2>
-          <p>
+          <p style = "line-height:30px;">
             • Completion of CFA application (<a href="<?php echo get_field('file')['url']; ?>" target="_blank" download class ="link">Click here to Download Application</a>)<br>
             • Copy of construction contract with either the prime or the public sector unit<br>
             • At least three years in business, listing approved and completed projects<br>
@@ -75,7 +73,7 @@
         </div>
       </div>
       <div class="col-md-4">
-          <a href = "<?php echo get_field('file')['url']; ?>" target="_blank" download class = "btn btn-lg btn-primary btn-download"> Download Credit Application </a>
+          <a href = "<?php echo get_field('file')['url']; ?>" target="_blank" download class = "btn btn-lg btn-primary btn-download2"> Download Credit Application </a>
       </div>
 
       <!-- -->

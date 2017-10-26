@@ -71,7 +71,7 @@
 									How much can I borrow?
 								</h4>
 								<h4 class ="faq-content">
-								The line of credit is limited to a total of $500K subject to no more than four draws against the line of credit.</h4>
+								The line of credit is limited to a total of $500K.</h4>
 							</div>
 						</div>
 						<!-- -->
@@ -82,7 +82,7 @@
 							</div>
 							<div class="media-body">
 								<h4 class="faq-header">What is the cost of the line of credit?</h4>
-								<h4 class ="faq-content">CFA charges a 5% facility fee.  The facility fee is netted out of the advance request resulting in only 95% of the advance request being funded.    If the advance is not paid back by the end of sixty days, then on the sixty-first day interest will accrue at Prime + 10% for the next thirty days; at which time the advance must be paid off.  If the advance is paid off prior to sixty days, CFA will refund 1.25% of the facility fee.</h4>
+								<h4 class ="faq-content">CFA retains 5% from each funding request. This retainer is netted out of the advance request resulting in 95% of the advance request being funded. If the advance is not paid back by the end of 60 days, then on day 61 interest will accrue at Prime + 10% for the next 30 days; at which time the advance must be paid off.  If the advance is paid off prior to 60 days from the initial advance date, CFA will refund 1.25% of the retainer.</h4>
 							</div>
 						</div>
 						<!-- -->
@@ -94,7 +94,7 @@
 							<div class="media-body">
 								<h4 class="faq-header">Are there any additional costs?</h4>
 								<h4 class ="faq-content">
-									In addition to a facility fee and an interest rate commencing on the sixty-first day of the advance, there is an application fee of $250 and a document preparation fee of $500.
+									There is an application fee of $250 and a document preparation fee of $500.
 								</h4>
 							</div>
 						</div>

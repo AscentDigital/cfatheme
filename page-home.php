@@ -3,7 +3,7 @@ get_header();
 ?>
 <!-- .banner-carousel -->
 <div class="banner-carousel">
-	<div id="cfa-carousel" class="carousel slide carousel-fade" data-ride="carousel"> 
+	<div id="cfa-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000"> 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/mainbanner.jpg);"> 
 				<div class="container">
@@ -37,7 +37,7 @@ get_header();
 <section id="intro" class="section border-block __up ">
 	<div class="container">
 		<div>
-			<p><span class="hl">Welcome</span> to Construction Funding Access, LLC</p>
+			<p class ="text-center"><span class="hl" style = "font-size:32px;">Welcome</span> <img src ="<?php echo get_template_directory_uri(); ?>/img/LogoWelcome.jpg"> </p>
 		</div>
 		<div>
 			<p>
@@ -67,7 +67,7 @@ get_header();
 						<img src="<?php echo get_template_directory_uri(); ?>/img/iconsmainpage02.png" alt="">
 					</div>
 				</div>
-				<h1>Fair Facility Fee</h1>
+				<h1>Competitive Fees</h1>
 			</div>
 			<div class="col-sm-4"> 
 				<div class="center-div">
@@ -75,7 +75,7 @@ get_header();
 						<img src="<?php echo get_template_directory_uri(); ?>/img/iconsmainpage03.png" alt="">
 					</div>
 				</div>
-				<h1>High Approval</h1>
+				<h1>High Approval Rate</h1>
 			</div>
 			<!--  -->
 		</div>
@@ -94,10 +94,10 @@ get_header();
 		<img src="<?php echo get_template_directory_uri(); ?>/img/comillas2.png" alt="">
 		<div class="author">
 			<p>
-				<span class="bk"></span>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/Larry.png" alt="" style = "height:62px;width:406px;margin-bottom:30px;">
-				<span class="bk"></span>
-			</p>
+				<span class="bk">[</span>
+				Larry Trevino, Partner
+				<span class="bk">]</span>
+			</p><br>
 		</div>
 	</div>
 
@@ -111,7 +111,7 @@ get_header();
 		<p>Economically empowering the small business community through enhanced access to working capital.</p>
 		<div class="call-us">
 			<p class="hl">CALL US</p>
-			<a href="" class="hl2">732.123.4567</a>
+			<a href="" class="hl2">713.722.0162</a>
 		</div>
 	</div>
 </section>

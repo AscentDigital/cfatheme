@@ -57,7 +57,7 @@
           color:#013868;
       }
       .about-title h1:after {
-        background: #9B9999;
+        background: #DDD;
         height: 2px;
         width: 52%;
         content: '';
@@ -71,8 +71,9 @@
       }
       .content-1{
         margin-top: 50px;
-        font-size: 16px;
-        text-align: justify;
+        font-size: 17px;
+        text-align: justify; 
+        color: #666464;
         line-height: 22px;
         font-family: raleway, sans-serif;
         font-weight: 500;
@@ -93,8 +94,9 @@
       }
       .content-3{
         margin-top: 50px;
-        font-size: 16px;
+        font-size: 17px;
         text-align: justify;
+        color: #666464;
         line-height: 22px;
         font-family: raleway, sans-serif;
         font-weight: 500;
@@ -102,8 +104,9 @@
       }
       .content-4{
         margin-top: 50px;
-        font-size: 16px;
+        font-size: 17px;
         text-align: justify;
+        color: #666464;
         line-height: 22px;
         font-family: raleway, sans-serif;
         font-weight: 500;
@@ -131,7 +134,7 @@
         margin-top: 50px;
       }
       .contact-title:after {
-        background: #9B9999;
+        background: #DDD;
         height: 2px;
         width: 100%;
         content: '';
@@ -150,6 +153,7 @@
         font-size: 24px;
         text-align: left !important;
         line-height: 31px;
+        color: #666464;
         font-family: roboto, sans-serif;
         font-weight: 400;
       }
@@ -159,8 +163,8 @@
           margin-left:10px;
         }
       }
-      .form-panel{
-        margin-top:80px;
+      .form-panel2{
+        margin-top:75px;
         margin-bottom: 80px;
         position: relative;
         background-color: #03CD61;
@@ -225,7 +229,7 @@
         font-weight: 800;
       }
       .faq-area h1:after {
-        background: #9B9999;
+        background: #DDD;
         height: 2px;
         width: 28%;
         content: '';
@@ -261,6 +265,7 @@
       .faq-content{
         font-size: 17px;
         text-align: justify;
+        color: #666464;
         line-height: 24px;
         font-family: raleway, sans-serif;
         font-weight: 500;
@@ -292,10 +297,23 @@
           font-size: 30px;
         }
       }
+      .form-h1{
+        color: #0278DD;
+        font-size: 36px;
+        text-align: left;
+        line-height: 36px;
+        font-family: raleway, sans-serif;
+        font-weight: 800;
+        margin-top:80px;
+      } 
+      @media (max-width: 767px) {
+        .form-h1 h1 {
+          font-size: 30px;
+        }
+      }
       .listing{
         text-align: left;
-        margin-top: 50px;
-        margin-left: 50px;
+        margin-top: 50px;        
         list-style-type: square; 
       }
       .green-box{
@@ -315,7 +333,7 @@
         bottom:10px;
       }
       .need-list h1:after {
-        background: #9B9999;
+        background: #DDD;
         height: 2px;
         width: 82%;
         content: '';
@@ -325,7 +343,7 @@
         margin-bottom: 100px;
       }
       .form-panel{
-        margin-top:80px;
+        margin-top:34px;
         margin-bottom: 80px;
         position: relative;
         background-color: #03CD61;
@@ -358,6 +376,10 @@
       .loan-content{
         margin-top:60px;
         position: relative;
+        color: #666464;
+      }
+      .sec-1{
+        margin-top:130px;
       }
       .loan-content h2{    
         color: #03CD62;
@@ -367,12 +389,12 @@
         font-weight: 800;
       }
       .loan-content p{
-        font-size: 16px !important;
-        text-align: justify !important;
-        line-height: 22px !important;
-        font-family: raleway, sans-serif !important;
-        font-weight: 500 !important;
-        padding:0 !important;
+        font-size: 17px;
+        text-align: justify;
+        line-height: 22px;
+        font-family: raleway, sans-serif;
+        font-weight: 500;
+        padding:0;
 
       }
       .side-text{    
@@ -381,11 +403,11 @@
         line-height: 24px;
         font-family: roboto, sans-serif;
         font-weight: 700;
-        margin-top:10px;
+        margin-top:165px;
       }
       .side-text:after {
-        background: #9B9999;
-        height: 240%;
+        background: #DDD;
+        height: 170%;
         width: 2px;
         content: '';
         position: absolute;
@@ -398,10 +420,11 @@
         line-height: 24px;
         font-family: roboto, sans-serif;
         font-weight: 700;
+        margin-top:95px;
       }
       .side-text2:after {
-        background: #9B9999;
-        height: 100%;
+        background: #DDD;
+        height: 85%;
         width: 2px;
         content: '';
         position: absolute;
@@ -417,13 +440,13 @@
         font-weight: 800;
       }
       .section-title:after {
-        background: #9B9999;
+        background: #DDD;
         height: 2px;
         width: 39%;
         content: '';
         position: absolute;
         left: 0px;
-        margin-top: 70px;
+        margin-top: 100px;
         margin-bottom: 100px;
       }
       /* End Loan*/
@@ -440,8 +463,29 @@
         margin-top: 90px;
       }
       .btn-download:after {
-        background: #9B9999;
-        height: 45%;
+        background: #DDD;
+        height: 50%;
+        width: 2px;
+        content: '';
+        position: absolute;
+        left: 0px;
+        margin-top: -17px;
+      }
+      .btn-download2{
+        background-color: #0278DD;
+        border-radius: 0px;
+        padding:15px 30px;
+        color: #FFFFFF;
+        line-height: 23px;
+        font-size: 19px;
+        text-align: center;
+        font-family: roboto, sans-serif;
+        font-weight: 700;
+        margin-top: 100px;
+      }
+      .btn-download2:after {
+        background: #DDD;
+        height: 90%;
         width: 2px;
         content: '';
         position: absolute;

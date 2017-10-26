@@ -5,7 +5,7 @@
     <img src="<?php echo get_template_directory_uri(); ?>/img/logotopbw.png" alt="" class="">
 
     <img src="<?php echo get_template_directory_uri(); ?>/img/contacticons4-u3155.png" alt="">
-    <a href="" class="contact">732.123.4567</a>
+    <a href="" class="contact">713.722.0162</a>
 
     <img src="<?php echo get_template_directory_uri(); ?>/img/contacticons3-u3153.png" alt="">
     <a href="" class="contact">info@constructionfa.com</a>
