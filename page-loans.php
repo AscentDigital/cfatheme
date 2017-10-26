@@ -26,9 +26,9 @@
           <p>
             The loan is based on a line of credit of no more than $500,000 and is project specific.  Advances under the line of credit are discounted whereby the subcontractor or small prime will receive 95% of the requested advance amount.  CFA will directly be repaid 100% of the requested advance either from the public sector unit or the contractor once funds are disbursed by the public sector unit.<br><br>
 
-            The term of the line of credit is generally for sixty days.  If advances under the line of credit are not repaid at the end of sixty days, interest will begin to accrue on the sixty-first day for a period not to exceed ninety days from the initial advance; at which time those advances still outstanding  on the ninetieth day must be repaid.<br><br>
+            The term of the line of credit is generally for 6 to 12 months. If advances under the line of credit are not repaid at the end of 60 days, interest will begin to accrue on the day 61 for a period not to exceed 90 days from the initial advance; at which time those advances still outstanding  on the 90th day must be repaid. <br><br>
 
-            As stated, repayment of the loan will generally come from the public unit to which the subcontractor/prime have entered into an agreement to perform certain services.  The repayment will generally be based on the contractor’s draw request/account receivable as submitted to the public sector unit.<br>
+            As stated, repayment of the loan will generally come from the public unit to which the subcontractor/prime have entered into an agreement to perform certain services.  The repayment will generally be based on the contractor’s draw request/account receivable as submitted to the public sector unit.<br><br>
             All parties to the transaction will acknowledge CFA’s security interest in the draw request and the reimbursement proceeds from the public sector unit.<br>
           </p>
         </div>

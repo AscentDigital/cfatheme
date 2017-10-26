@@ -43,7 +43,8 @@
 					<p style = "padding-top:5px"><b>3.</b> Significantly reducing the probability of inquiries or complaints from sub- contractors awaiting payment.</p>
 					</p><br>
 
-					This is accomplished by providing small primes and sub-contractors with easily accessible capital with favorable pricing without regard to their credit, tenure in business or underlying assets. Different than a factoring company, CFA takes into consideration the financial strength of the contracting entity and passes savings through to its small business clients.
+					This is accomplished by providing small primes and sub-contractors with easily accessible capital with favorable pricing . Different than a factoring company, CFA takes into consideration the financial strength of the public sector entity and passes expedited cash flow to the subcontractor or small prime.
+
 				</div> 
 				<div class="content-4">
 					<h1>Why CFA?</h1>
