@@ -68,25 +68,7 @@
 	}
 	 
 	function init(){
-		$success = '';
-		if(isset($_GET['success'])){
-			$success = ' <div id="message" class="updated notice notice-success is-dismissible"><p>Recipient updated.</p><button type="button" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></button></div>';
-		}
-	    echo '<div class="wrap">
-	    <h1>Edit Theme Options</h1><br>
-	   	'.$success.'
-	    <form action="'.esc_url( admin_url('admin-post.php') ).'" method="post">
-	    <input type="hidden" name="action" value="cfatheme_update_theme_options">
-	    <table class="form-table">
-	    	<tbody>
-	    		<tr class="form-field form-required">
-	    		<th scope="row"><label for="recipient-email">Recipient <span class="description">(required)</span></label></th>
-	    		<td><input name="recipient-email" type="text" id="recipient-email" value="'.get_option('cfatheme_recipient_email', '').'" aria-required="true" autocapitalize="none" autocorrect="off"></td>
-	    		</tr>
-	    	</toby>
-	    </table>
-	    <input type="submit" value="Update" name="submit" class="button button-primary">
-	    </div>';
+		include get_template_directory() . '/includes/theme-options.php';
 	}
 
 	function update_theme_options(){
@@ -110,7 +92,7 @@
 		$body .= 'Message: ' . $message;
 
 		$success = 'false';
-		if(wp_mail(get_option('cfatheme_recipient_email', ''), 'Construction Funding Access Contact Form', $body)){
+		if(wp_mail(get_option('cfatheme_recipient_email', ''), 'Contact Form CFA', $body)){
 			$success = 'true';
 		}
 
@@ -175,7 +157,7 @@
 		$body .= 'City: ' . $city . "\r\n";
 		$body .= 'Email: ' . $email . "\r\n";
 
-		wp_mail(get_option('cfatheme_recipient_email', ''), 'CFA Request Form', $body);
+		wp_mail(get_option('cfatheme_recipient_email', ''), 'Request Form CFA', $body);
 
 		wp_redirect(get_the_permalink($pageid) . '?success=' . $success);
 		exit;
