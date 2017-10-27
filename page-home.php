@@ -3,7 +3,7 @@ get_header();
 ?>
 <!-- .banner-carousel -->
 <div class="banner-carousel">
-	<div id="cfa-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000"> 
+	<div id="cfa-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-pause="false"> 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/mainbanner.jpg);"> 
 				<div class="container">

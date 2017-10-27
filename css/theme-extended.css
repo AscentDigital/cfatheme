@@ -199,6 +199,23 @@
           font-size: 14px;
         }
       }
+      .request-area{
+        height:140px !important;
+        padding-left: 20px;
+        font-size: 20px;
+        font-family: roboto, sans-serif;
+        font-weight: 700;
+        border-radius: 0px;
+        margin-bottom: 20px;
+        resize:none;
+        padding-top: 15px;
+      }
+
+      @media (max-width: 767px) {
+        .request-area {
+          font-size: 14px;
+        }
+      }
       .bottom-message{
         color: #666464 !important;
         font-size: 36px !important;
@@ -360,7 +377,6 @@
         font-size: 20px;
         font-family: roboto, sans-serif;
         font-weight: 700;
-        bottom:10px;
         border-radius: 0px;
         margin-bottom: 20px;
       }
@@ -525,7 +541,8 @@
       }
       .privacy-notice-content p{       
         line-height: 26px;
-        font-size: 16px;
+        font-size: 17px; 
+        color: #666464;
         text-align: justify;
         font-family: raleway, sans-serif;
         font-weight: 500;

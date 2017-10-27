@@ -54,7 +54,7 @@
 							</div>  
 							<div class="form-group">
 								<label>Message</label>
-								<textarea class = "form-control request-input" value ="" rows="5" style="resize:vertical;padding-top:15px;" placeholder = "Enter your Message or Question"/ name="message"></textarea>
+								<textarea class = "form-control request-area" value ="" placeholder = "Enter your Message or Question"/ name="message"></textarea>
 							</div>  
 							<button type = "submit" class = "btn btn-primary btn-lg request-input">Submit</button>
 						</form>

@@ -22,8 +22,8 @@
 					Information can include: social security numbers, employment information, account balances in financial institutions, credit history and other pertinent items of information in connection with your initial and ongoing relationship with CFA.  This information is solely for CFA’s use.  As such, it is not CFA’s corporate policy to share, by any means, this information with any individual or private or governmental entity not having the proper legal authority.  Notwithstanding, the sharing of this information will only be initiated by formal notice from you, a CFA customer.<br><br>
 					 
 					To protect your personal and company information from unauthorized access and use, CFA uses security measures that comply with Federal law.  These measures include extensive computer safeguards, secured files and physical facilities designed to preclude unauthorized access.<br>
-					For additional information regarding the privacy of your information, you can contact CFA at:<br>
-					713-123-1234</p>
+					For additional information regarding the privacy of your information, you can contact CFA at: 713.722.0162
+					</p>
 				</div>
 			</div>
 		</div>
